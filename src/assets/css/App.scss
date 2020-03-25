@@ -1,0 +1,23 @@
+@import "_reset.scss";
+@import "_config.scss";
+@import "_common.scss";
+
+.flex {
+	display: flex;
+	&.flex-row {
+		flex-direction: row;
+	}
+	&.flex-col {
+		flex-direction: column;
+	}
+	&.flex-between {
+		justify-content: space-between;
+	}
+	&.flex-around {
+		justify-content: space-around;
+	}
+	&.flex-center {
+		align-items: center;
+		justify-content: center;
+    }
+}

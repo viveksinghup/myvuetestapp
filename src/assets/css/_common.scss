@@ -1,0 +1,49 @@
+@mixin centerFlex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+	padding: 0px 15px;
+}
+
+.btn{
+	font-size: 14px;
+	border: none;
+	@include centerFlex;
+	cursor: pointer;
+	&-yellow{
+		background-color: $yellow;
+    	color: $white;
+	}
+	&-white{
+		background-color: $white;
+    	color: $yellow;
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.yellow-bg{
+	background-color: $yellow;
+}
+.purple-bg{
+	background-color: $purple;
+}
+.pink-bg{
+	background-color: $pink;
+}
+.yellow-light-bg{
+	background-color: $yellow-light;
+}
+.green-bg{
+	background-color: $green;
+}
+.purple-light-bg{
+	background-color: $purple-light;
+}
